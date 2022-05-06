@@ -1,6 +1,5 @@
 package com.example.mvvmcomposenoteapp.model
 
-import java.time.LocalDateTime
 import java.util.*
 
 data class Note(
