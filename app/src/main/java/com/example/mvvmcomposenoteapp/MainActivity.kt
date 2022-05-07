@@ -15,7 +15,10 @@ import com.example.mvvmcomposenoteapp.data.NotesDataSource
 import com.example.mvvmcomposenoteapp.screen.NoteScreen
 import com.example.mvvmcomposenoteapp.screen.NoteScreenViewModel
 import com.example.mvvmcomposenoteapp.ui.theme.MVVMComposeNoteAppTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
