@@ -17,7 +17,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -39,7 +38,6 @@ fun NoteScreen(
     var desc = remember {
         mutableStateOf("")
     }
-    val context = LocalContext.current
     Column(modifier = Modifier.padding(6.dp)) {
 
         TopAppBar(title = {
@@ -129,7 +127,7 @@ fun NoteRow(
             style = MaterialTheme.typography.subtitle2)
             Text(text = note.desc,
                 style = MaterialTheme.typography.subtitle2)
-            Text(text = note.entryDate.toString(),
+            Text(text = note.entryDate,
                 style = MaterialTheme.typography.subtitle2)
         }
     }
